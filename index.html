@@ -5,66 +5,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flix</title>
-
-
     <style>
         * {
+            font-family: sans-serif;
             margin: 0;
             padding: 0;
         }
 
-
         #heading {
-            background-color: red;
+            background: rgba(0, 0, 0, 0.7);
         }
 
+        body {
+            background-image: url(fundo.jpg);
+            background-size: cover;
+            background-position: top center;
+        }
 
-        #heading h1 {
+        #heading div {
+
+            width: 80%;
+            display: flex;
+            justify-content: space-between;
+            margin: 0 auto;
+        }
+
+        #heading .h1 {
+            padding: 15px 0;
             font-size: 20px;
             text-transform: uppercase;
-
         }
 
         #heading a {
             color: white;
             text-decoration: none;
-
-            @font-face {
-                font-family: 'Breno';
-                src: url('BebasNeue-Regular.woff2') format('truetype');
-                src: url('BebasNeue-Regular.woff2') format('woff2');
-                src: url('BebasNeue-Regular.eot') format('eot');
-                font-weight: normal;
-                font-style: normal;
-            }
-
-           
-                @font-face {
-                    font-family: Bren;
-                    src: url('BebasNeue-Regular.woff');
-                }
-            h2 {font-family: Bren;}
         }
     </style>
-
-
-
-
 </head>
 
 <body>
     <header id="heading">
-        <h1>
-            <a href="#">Mogi-Flix</a>
-
-        </h1>
-        <h2>
-            Brenao
-        </h2>
-
-
+        <div>
+            <h1 class="h1">
+                <a href="#">Mogi-Cine</a>
+            </h1>
+            <h2 class="h1">
+                <a href="#">Entrar</a>
+            </h2>
+        </div>
     </header>
-
 </body>
 
 </html>
