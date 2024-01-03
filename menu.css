@@ -17,8 +17,9 @@ body {
 }
 
 ul li :hover {
-    font-size: 19px;
+    
     background: rgba(255, 0, 0, 0.5);
+    font-size: 19px;
 
 
 }
@@ -30,7 +31,7 @@ body nav ul li a  {
     border-radius: 30PX;
     background-color: black;
     padding: 10px 80px;
-    margin: 10px 300px;
+    margin: 10px 40px;
     display: block;
     color: #ffffff;
     text-decoration: none;
