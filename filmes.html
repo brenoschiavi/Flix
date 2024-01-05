@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <title>Filmes</title>
+
+</head>
+<body>
+    <div>
+        <nav>
+            <ul>
+                <li><a href="menu.html" class="link">Home</a></li>
+                <li><a href="filmes.html" class="link">Filmes</a></li>
+                <li><a href="series.html" class="link">Series</a></li>
+                <li><a href="pesquisa.html" class="link">Pesquisar</a></li>
+                <li><a href="index.html" class="link">Sair</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="netflix-container">
+        <div class="genre">
+            <h2>Ação</h2>
+            <div class="movies-grid">
+                <button class="nav-button prev-button" onclick="scrollMovies(-150)">&#8249;</button>
+                <div class="movie-card">
+                    <img src="filmes/card/hp1.jpg" alt="Título do Filme">
+                    <div class="movie-title">Harry Potter e a Pedra Filosofal (2001)</div>
+                </div>
+                <div class="movie-card">
+                    <img src="filmes/card/hp2.jpg" alt="Título do Filme">
+                    <div class="movie-title">Harry Potter e a Câmara Secreta (2002)</div>
+                </div>
+                <div class="movie-card">
+                    <img src="filmes/card/hp3.jpg" alt="Título do Filme">
+                    <div class="movie-title">Harry Potter e o Prisioneiro de Azkaban (2004)</div>
+                </div>
+                <div class="movie-card">
+                    <img src="filmes/card/hp4.jpg" alt="Título do Filme">
+                    <div class="movie-title">Harry Potter e o Cálice de Fogo (2005)</div>
+                </div>
+                <div class="movie-card">
+                    <img src="filmes/card/hp5.jpg" alt="Título do Filme">
+                    <div class="movie-title">Harry Potter e a Ordem da Fênix (2007)</div>
+                </div>
+                <!-- Adicione mais cartões de filmes conforme necessário -->
+                <button class="nav-button next-button" onclick="scrollMovies(150)">&#8250;</button>
+            </div>
+        </div>
+    <div class="netflix-container">
+        <div class="genre">
+            <h2>Aventura</h2>
+            <div class="movies-grid">
+                <button class="nav-button prev-button" onclick="scrollMovies(-150)">&#8249;</button>
+                <div class="movie-card">
+                    <img src="filmes/card/s1.jpg" alt="Título do Filme">
+                    <div class="movie-title">O Senhor dos Anéis: A Sociedade do Anel (2001)</div>
+                </div>
+                <div class="movie-card">
+                    <img src="filmes/card/s2.jpg" alt="Título do Filme">
+                    <div class="movie-title">O Senhor dos Anéis: As Duas Torres (2002)</div>
+                </div>
+                <div class="movie-card">
+                    <img src="filmes/card/s3.jpg" alt="Título do Filme">
+                    <div class="movie-title">O Senhor dos Anéis: O Retorno do Rei (2003)</div>
+                </div>
+                <div class="movie-card">
+                    <img src="filmes/card/s4.jpg" alt="Título do Filme">
+                    <div class="movie-title">O Hobbit: Uma Jornada Inesperada (2012)</div>
+                </div>
+                <div class="movie-card">
+                    <img src="filmes/card/s5.jpg" alt="Título do Filme">
+                    <div class="movie-title">O Hobbit: A Desolação de Smaug (2013)</div>
+                </div>
+
+        
+                <!-- Adicione mais cartões de filmes conforme necessário -->
+                <button class="nav-button next-button" onclick="scrollMovies(150)">&#8250;</button>
+            </div>
+        </div>
+
+        <!-- Adicione mais categorias de gênero conforme necessário -->
+    </div>
+
+    <script>
+        function scrollMovies(amount) {
+            const moviesGrid = document.querySelector('.movies-grid');
+            moviesGrid.scrollLeft += amount;
+        }
+    </script>
+
+</body>
+</html>
+
+
